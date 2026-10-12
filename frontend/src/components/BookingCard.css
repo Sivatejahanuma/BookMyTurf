@@ -1,0 +1,87 @@
+.booking-card {
+  background: rgba(19, 28, 49, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.booking-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.booking-ref {
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--color-text-muted);
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.booking-turf-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.booking-location {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.booking-detail-line {
+  font-size: 13px;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.booking-details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-sm);
+  margin-top: var(--space-xs);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-border);
+}
+
+.booking-detail-label {
+  display: block;
+  font-size: 11px;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.booking-detail-value {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-top: 2px;
+}
+
+.booking-actions {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.booking-actions .btn {
+  flex: 1;
+}
+
+@media (max-width: 480px) {
+  .booking-details-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

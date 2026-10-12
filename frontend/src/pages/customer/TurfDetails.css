@@ -1,0 +1,173 @@
+.turf-details-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.turf-details-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.turf-details-header h1 {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.turf-details-location {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-top: var(--space-xs);
+}
+
+.turf-details-desc {
+  margin-top: var(--space-md);
+  color: var(--color-text);
+  font-size: 14px;
+}
+
+.turf-details-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.turf-details-meta span {
+  display: block;
+  font-size: 12px;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.turf-details-meta strong {
+  display: block;
+  font-size: 15px;
+  color: var(--color-text);
+  margin-top: 2px;
+}
+
+.slot-selection-card h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+}
+
+.slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: var(--space-sm);
+  margin: var(--space-md) 0;
+}
+
+.slot-btn {
+  padding: 10px 8px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--color-border);
+  background-color: var(--color-surface);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.slot-btn:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary-light);
+}
+
+.slot-selected {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+}
+
+.slot-unavailable {
+  background-color: var(--color-bg);
+  color: var(--color-text-light);
+  text-decoration: line-through;
+  cursor: not-allowed;
+  border-color: var(--color-border);
+}
+
+.book-slot-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  margin-top: var(--space-sm);
+}
+
+.booking-success-card {
+  text-align: center;
+  padding: var(--space-2xl);
+}
+
+.success-icon {
+  font-size: 48px;
+  margin-bottom: var(--space-md);
+}
+
+.booking-success-card h2 {
+  font-size: 22px;
+  margin-bottom: var(--space-sm);
+}
+
+.booking-ref-box {
+  background-color: var(--color-primary-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  margin: var(--space-lg) 0;
+}
+
+.booking-ref-box span {
+  display: block;
+  font-size: 12px;
+  color: var(--color-primary-dark);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.booking-ref-box strong {
+  display: block;
+  font-size: 20px;
+  color: var(--color-primary-dark);
+  margin-top: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.booking-summary {
+  text-align: left;
+  background-color: var(--color-bg);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  font-size: 14px;
+}
+
+.booking-summary p {
+  margin-bottom: var(--space-xs);
+}
+
+.success-actions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  margin-top: var(--space-lg);
+}
+
+@media (max-width: 600px) {
+  .turf-details-meta {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+  .success-actions {
+    flex-direction: column;
+  }
+}

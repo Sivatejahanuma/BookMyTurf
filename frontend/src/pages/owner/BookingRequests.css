@@ -1,0 +1,38 @@
+.booking-requests-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+}
+
+.booking-requests-page .filter-tabs {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.booking-requests-page .filter-tab {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1.5px solid var(--color-border);
+  background-color: var(--color-surface);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.booking-requests-page .filter-tab:hover {
+  border-color: var(--color-primary);
+}
+
+.booking-requests-page .filter-tab-active {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+}
+
+.booking-requests-page .booking-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-lg);
+}
